@@ -131,6 +131,16 @@ function blob_fixup() {
         vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml)
             sed -i 's/1.1/1.2/' "$2"
             ;;
+       vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so|\
+       vendor/lib64/libstfactory-vendor.so|\
+       vendor/lib/libnvram.so|\
+       vendor/lib64/libnvram.so|\
+       vendor/lib/libsysenv.so|\
+       vendor/lib64/libsysenv.so|\
+       vendor/lib/libtflite_mtk.so|\
+       vendor/lib64/libtflite_mtk.so)
+            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+           ;;
     esac
 }
 
