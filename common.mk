@@ -393,7 +393,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
-# Required libs QPR3
+# Required libs as of 14 QPR3
 PRODUCT_PACKAGES += \
     libshim_camera_metadata \
     libexpat.vendor \
@@ -422,6 +422,10 @@ PRODUCT_PACKAGES += \
     libutilscallstack.vendor \
     libziparchive.vendor \
     libhidlmemory.vendor 
+
+# Required libs as of 15 QPR2
+PRODUCT_PACKAGES += \
+   libbase_shim
 
 # Secure Element
 PRODUCT_PACKAGES += \
