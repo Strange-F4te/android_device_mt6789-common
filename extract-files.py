@@ -14,6 +14,13 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+namespace_imports = [
+    'device/tecno/mt6789-common',
+    'hardware/mediatek',
+    'hardware/mediatek/libmtkperf_client',
+    'hardware/transsion',
+]
+
 blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
@@ -69,6 +76,7 @@ module = ExtractUtilsModule(
     'mt6789-common',
     'tecno',
     blob_fixups=blob_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
