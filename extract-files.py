@@ -84,7 +84,10 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 'vendor/lib/libsysenv.so', 'vendor/lib64/libsysenv.so',
      'vendor/lib/libtflite_mtk.so', 'vendor/lib64/libtflite_mtk.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
-    ('vendor/lib64/mt6789/libcam.hal3a.v3.so', 'vendor/lib64/hw/hwcomposer.mtk_common.so'): blob_fixup()
+    'vendor/lib64/mt6789/libcam.hal3a.v3.so': blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
+    'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
+        .patchelf_version('0_17_2')
         .add_needed('libprocessgroup_shim.so'),
 }  # fmt: skip
 
