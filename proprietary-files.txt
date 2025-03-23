@@ -1072,11 +1072,11 @@ vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
--vendor/lib64/mediadrm/libwvdrmengine.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
+-vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
--vendor/lib64/libwvhidl.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
+-vendor/lib64/libwvhidl.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -1272,13 +1272,13 @@ vendor/lib64/libviagpsrpc.so
 vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 
 # IMS - from X6833B-H894DEFGHI-U-GL-240703V808
--system_ext/framework/mediatek-common.jar:framework/mediatek-common.jar|b4f57c8f65b92d8b65074911b626559107764bb5
--system_ext/framework/mediatek-framework.jar:framework/mediatek-framework.jar|73d22531a8cb342712e66333120b7e0f6615733c
--system_ext/framework/mediatek-ims-base.jar:framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
--system_ext/framework/mediatek-ims-common.jar:framework/mediatek-ims-common.jar|163657f0dea57218c55fc758fefa6eecf2edb8f6
--system_ext/framework/mediatek-ims-extension-plugin.jar:framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
--system_ext/framework/mediatek-telecom-common.jar:framework/mediatek-telecom-common.jar|247f6c23515d7336a857a749eba69ac63d4212f3
--system_ext/framework/mediatek-telephony-common.jar:framework/mediatek-telephony-common.jar|9cdc9a9d04277c2fc74056f6b72ac3505701a238
+-system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar|b4f57c8f65b92d8b65074911b626559107764bb5
+-system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar|73d22531a8cb342712e66333120b7e0f6615733c
+-system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
+-system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar|163657f0dea57218c55fc758fefa6eecf2edb8f6
+-system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
+-system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar|247f6c23515d7336a857a749eba69ac63d4212f3
+-system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar|9cdc9a9d04277c2fc74056f6b72ac3505701a238
 system_ext/bin/vtservice|a5fa3c8cf25f1ae5287f9d10ef88b33f428acdc6
 system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
 system_ext/lib/libmtk_vt_wrapper.so|e6ff2db0096aaeeff0cac424e36574970cc92c9c
@@ -1308,8 +1308,8 @@ system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|d12f0aef8da47
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|cdd9da0a0896031fd034069566bc80c332cdc9c1
 
 # IMS (App) - X6833B-H894DEFGHI-U-GL-240703V808  (patched)
--system_ext/framework/mediatek-telephony-base.jar:framework/mediatek-telephony-base.jar|018c0d93cd249e2bc0b3f865e2d3a946cf57a4cf
--system_ext/priv-app/ImsService/ImsService.apk:priv-app/ImsService/ImsService.apk|e2d3c7154ebe5ebc3594d4647d06d80fd1481cc7
+-system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar|018c0d93cd249e2bc0b3f865e2d3a946cf57a4cf
+-system_ext/priv-app/ImsService/ImsService.apk:system/priv-app/ImsService/ImsService.apk|e2d3c7154ebe5ebc3594d4647d06d80fd1481cc7
 
 # IMS (Vendor)
 vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
@@ -1359,7 +1359,7 @@ vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
 
 # Media (C2)
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;NOCHECK
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/mtk_platform_codecs_config.xml
 vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml:vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
@@ -1656,14 +1656,12 @@ vendor/bin/volte_md_status
 vendor/bin/volte_rcs_ua
 vendor/bin/volte_stack
 vendor/bin/volte_ua
-vendor/bin/wfca
 vendor/etc/init/init.volte_imcb.rc
 vendor/etc/init/init.volte_imsm_93.rc
 vendor/etc/init/init.volte_md_status.rc
 vendor/etc/init/init.volte_stack.rc
 vendor/etc/init/init.volte_ua.rc
 vendor/etc/init/init.vtservice_hidl.rc
-vendor/etc/init/init.wfca.rc
 vendor/etc/init/init.wod.rc
 vendor/etc/init/mtk_pkm_service.rc
 vendor/etc/init/volte_clientapi_ua.rc
