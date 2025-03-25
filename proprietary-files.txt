@@ -638,40 +638,8 @@ vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/meow.cfg
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/VideoLog_dynamic.xml
-vendor/lib/egl/mt6789/libGLES_mali.so
 vendor/lib/egl/egl.cfg
-vendor/lib/egl/libGLES_meow.so
-vendor/lib/egl/libMEOW_data.so
-vendor/lib/egl/libMEOW_gift.so
-vendor/lib/egl/libMEOW_qt.so
-vendor/lib/egl/libMEOW_trace.so
-vendor/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so
-vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib/hw/mt6789/gralloc.common.so
-vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so
-vendor/lib/hw/mt6789/vulkan.mali.so
 vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so
-vendor/lib/mt6789/libaiselector.so
-vendor/lib/mt6789/libdpframework.so
-vendor/lib/mt6789/libgpudataproducer.so
-vendor/lib/mt6789/libmtk_drvb.so
-vendor/lib/mt6789/libnir_neon_driver.so
-vendor/lib/libDefaultFpsActor.so
-vendor/lib/libFrameRecord.so
-vendor/lib/libNoFpsActor.so
-vendor/lib/libOpenCL.so
-vendor/lib/libged.so
-vendor/lib/libgpu_aux.so
-vendor/lib/libgpud.so
-vendor/lib/libgralloc_extra.so
-vendor/lib/libgralloc_metadata.so
-vendor/lib/libgralloctypes_mtk.so
-vendor/lib/libion_mtk.so
-vendor/lib/libion_ulit.so
-vendor/lib/libladder.so
-vendor/lib/libmml.so
-vendor/lib/libpqframework.so
-vendor/lib/libudf.so
 vendor/lib64/egl/mt6789/libGLES_mali.so
 vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_data.so
@@ -687,7 +655,6 @@ vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so
 vendor/lib64/mt6789/libaiselector.so
 vendor/lib64/mt6789/libdpframework.so
 vendor/lib64/mt6789/libgpudataproducer.so
-vendor/lib64/mt6789/libmtk_drvb.so
 vendor/lib64/mt6789/libnir_neon_driver.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
@@ -702,7 +669,6 @@ vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
-vendor/lib64/libladder.so
 vendor/lib64/libmml.so
 vendor/lib64/libudf.so
 vendor/lib64/libVkLayer_mtk_rt_sdk.so
@@ -710,9 +676,6 @@ vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/priv-app/GpuGameDriver.mt6789/GpuGameDriver.mt6789.apk
 
 # Display (AAL)
-vendor/lib/mt6789/libaal_cust_func.so
-vendor/lib/libaal_key.so
-vendor/lib/libaal_mtk.so
 vendor/lib64/mt6789/libaal_cust_func.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
@@ -720,25 +683,6 @@ vendor/lib64/libaal_mtk.so
 # Display (PQ)
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/lib/mt6789/libpq_cust_base.so
-vendor/lib/mt6789/libpq_prot.so
-vendor/lib/mt6789/libpqparamparser.so
-vendor/lib/vendor.mediatek.hardware.pq@2.0.so
-vendor/lib/vendor.mediatek.hardware.pq@2.1.so
-vendor/lib/vendor.mediatek.hardware.pq@2.10.so
-vendor/lib/vendor.mediatek.hardware.pq@2.11.so
-vendor/lib/vendor.mediatek.hardware.pq@2.12.so
-vendor/lib/vendor.mediatek.hardware.pq@2.13.so
-vendor/lib/vendor.mediatek.hardware.pq@2.14.so
-vendor/lib/vendor.mediatek.hardware.pq@2.15.so
-vendor/lib/vendor.mediatek.hardware.pq@2.2.so
-vendor/lib/vendor.mediatek.hardware.pq@2.3.so
-vendor/lib/vendor.mediatek.hardware.pq@2.4.so
-vendor/lib/vendor.mediatek.hardware.pq@2.5.so
-vendor/lib/vendor.mediatek.hardware.pq@2.6.so
-vendor/lib/vendor.mediatek.hardware.pq@2.7.so
-vendor/lib/vendor.mediatek.hardware.pq@2.8.so
-vendor/lib/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so
 vendor/lib64/mt6789/libpq_cust_base.so
 vendor/lib64/mt6789/libpq_prot.so
@@ -793,6 +737,10 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 -vendor/lib64/libwvhidl.so
+
+# DRVB
+vendor/lib/mt6789/libmtk_drvb.so
+vendor/lib64/mt6789/libmtk_drvb.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -1056,6 +1004,10 @@ vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc
 -vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
 -vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
 
+# libladder
+vendor/lib/libladder.so
+vendor/lib64/libladder.so
+
 # Media
 vendor/bin/vpud
 vendor/bin/mt6789/v3avpud.mt6789
@@ -1103,6 +1055,8 @@ vendor/lib/libh264dec_sd.ca7.so
 vendor/lib/libh264dec_se.ca7.so
 vendor/lib/libh264enc_sa.ca7.so
 vendor/lib/libhevce_sb.ca7.android.so
+vendor/lib/libion_mtk.so
+vendor/lib/libion_ulit.so
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
@@ -1146,6 +1100,7 @@ vendor/etc/init/init.otg.rc
 vendor/etc/init/md_monitor.rc
 vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc
 -vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
+vendor/lib/mt6789/libaiselector.so
 vendor/lib/libccci_util.so
 vendor/lib/libhydra.so
 vendor/lib/libminiui.so
@@ -1195,6 +1150,7 @@ vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
 vendor/etc/armnn_app.config
 vendor/etc/nnapi_powerhal.json
+vendor/lib/mt6789/libnir_neon_driver.so
 vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so
 vendor/lib64/mt6789/libneuron_adapter_mgvi.so
 vendor/lib64/mt6789/libneuron_runtime.5.so
