@@ -39,13 +39,13 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
     ('vendor/bin/hw/mt6789/camerahalserver', 'vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so',
-     'vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service'): blob_fixup()
+     'vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so','vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service'): blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so')
         .replace_needed('libbinder.so', 'libbinder-v32.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so': blob_fixup()
         .add_needed('libshim_camera_metadata.so'),
-    ('vendor/lib*/libwvhidl.so', 'vendor/lib*/mediadrm/libwvdrmengine.so'): blob_fixup()
+    ('vendor/lib/libwvhidl.so', 'vendor/lib/mediadrm/libwvdrmengine.so','vendor/lib64/libwvhidl.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
         .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
     'vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc': blob_fixup()
         .regex_replace('@1.2-mediatek', '@1.2-mediatek-64b'),
@@ -56,7 +56,7 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/lib64/mt6789/libaalservice.so',
      'vendor/lib64/mt6789/libcam.utils.sensorprovider.so'): blob_fixup()
         .add_needed('libshim_sensors.so'),
-    'vendor/lib*/hw/audio.primary.mediatek.so': blob_fixup()
+    ('vendor/lib/hw/audio.primary.mediatek.so', 'vendor/lib64/hw/audio.primary.mediatek.so'): blob_fixup()
         .replace_needed('libalsautils.so', 'libalsautils-v32.so')
         .replace_needed('libutils.so', 'libutils-v32.so')
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so')
@@ -73,8 +73,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libshim_sink.so'),
     'vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc': blob_fixup()
         .regex_replace('start', 'enable'),
-    ('vendor/lib*/libspeech_enh_lib.so', 'vendor/lib*/libalsautils-v32.so', 'vendor/lib64/libwifi-hal-mtk.so',
-     'vendor/lib*/hw/sound_trigger.primary.mt6789.so', 'vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so'): blob_fixup()
+    ('vendor/lib/libspeech_enh_lib.so', 'vendor/lib/libalsautils-v32.so', 'vendor/lib64/libspeech_enh_lib.so', 'vendor/lib64/libalsautils-v32.so', 'vendor/lib64/libwifi-hal-mtk.so',
+     'vendor/lib64/hw/sound_trigger.primary.mt6789.so', 'vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so'): blob_fixup()
         .fix_soname(),
     'vendor/etc/init/init.thermal_core.rc': blob_fixup()
         .regex_replace('ro.vendor.mtk_thermal_2_0', 'vendor.thermal.link_ready'),
