@@ -1507,8 +1507,6 @@ vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so
 vendor/bin/hw/android.hardware.nfc@1.2-service
 vendor/etc/init/android.hardware.nfc@1.2-service.rc
 vendor/etc/init/init.nxp.nfc.rc
-vendor/lib/hw/android.hardware.nfc@1.0-impl.so
-vendor/lib/libnxp_extamp_intf.so
 vendor/lib64/hw/android.hardware.nfc@1.0-impl.so
 vendor/lib64/ese_client.so
 vendor/lib64/ese_spi_nxp.so
