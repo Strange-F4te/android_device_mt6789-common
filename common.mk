@@ -422,11 +422,13 @@ PRODUCT_PACKAGES += \
    libbase_shim \
    libprocessgroup_shim \
    libbinder-v32 \
-   libhidlbase-v32 \
-   libhidlbase-v32.vendor \
    libstagefright_foundation-v33 \
    libutils-v32 \
    libutils-v32.transsion
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidlbase-v32.so \
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so
 
 # Secure Element
 PRODUCT_PACKAGES += \
