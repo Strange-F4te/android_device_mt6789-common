@@ -425,7 +425,8 @@ PRODUCT_PACKAGES += \
    libhidlbase-v32 \
    libhidlbase-v32.vendor \
    libstagefright_foundation-v33 \
-   libutils-v32
+   libutils-v32 \
+   libutils-v32.transsion
 
 # Secure Element
 PRODUCT_PACKAGES += \
