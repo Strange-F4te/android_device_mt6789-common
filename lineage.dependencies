@@ -2,7 +2,7 @@
   {
     "remote"      : "github",
     "repository"  : "Anything-at-25-00/android_hardware_mediatek",
-    "branch"      : "lineage-22.1",
+    "branch"      : "lineage-22.2",
     "target_path" : "hardware/mediatek"
   },
   {
@@ -20,7 +20,7 @@
   { 
     "remote"      : "github",
     "repository"  : "Anything-at-25-00/vendor_sony_dolby",
-    "branch"      : "v1.0_DolbyManager",
+    "branch"      : "fifteen-qpr2-DolbyManager",
     "target_path" : "vendor/sony/dolby"
   }
 ]
