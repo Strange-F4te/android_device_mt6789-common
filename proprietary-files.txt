@@ -723,8 +723,6 @@ vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/lib64/libfgauge_gm30.so
 
 # Gatekeeper
-vendor/lib/hw/libMcGatekeeper.so
-vendor/lib/libMcClient.so
 vendor/lib64/hw/libMcGatekeeper.so
 vendor/lib64/libMcClient.so
 
