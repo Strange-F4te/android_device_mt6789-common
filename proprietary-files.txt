@@ -635,6 +635,7 @@ vendor/etc/init/init.wmt_drv.rc
 vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
+vendor/etc/meow.cfg
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/VideoLog_dynamic.xml
 vendor/lib/egl/mt6789/libGLES_mali.so
