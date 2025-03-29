@@ -622,10 +622,6 @@ vendor/etc/anc_siq/superiq_model_s5kjn1_17201715_back_g97
 vendor/etc/cam3atms_profiles.xml
 vendor/etc/tran_camprofiles.xml
 
-# ChipInfo
-vendor/bin/chipinfo
-vendor/etc/init/chipinfo_init.rc
-
 # Connectivity
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
