@@ -27,6 +27,9 @@ TARGET_DYNAMIC_64_32_MEDIASERVER := true
 # Include 64-bit drmserver to support 64-bit only devices
 TARGET_DYNAMIC_64_32_DRMSERVER := true
 
+# Enable 64-bit for non-zygote.
+ZYGOTE_FORCE_64 := true
+
 # Audio 
 BOARD_USES_ALSA_AUDIO := true
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
