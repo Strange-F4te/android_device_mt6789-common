@@ -46,7 +46,6 @@ $(GATEKEEPER_DEFAULT_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf libSoftGatekeeper.so $@
 
 KEYMASTER_SYMLINKS := \
-	$(TARGET_OUT_VENDOR)/lib/hw/kmsetkey.default.so \
 	$(TARGET_OUT_VENDOR)/lib64/hw/kmsetkey.default.so
 
 $(KEYMASTER_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
