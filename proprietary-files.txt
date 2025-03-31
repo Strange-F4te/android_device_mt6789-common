@@ -1302,9 +1302,6 @@ vendor/bin/mcDriverDaemon
 vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
 vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
-vendor/lib/libTEECommon.so
-vendor/lib/libgz_gp_client.so
-vendor/lib/libgz_uree.so
 vendor/lib64/libTEECommon.so
 vendor/lib64/libgz_gp_client.so
 vendor/lib64/libgz_uree.so
