@@ -583,7 +583,6 @@ vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libdre.so
 vendor/lib64/libdynamiclog.so
 vendor/lib64/libhdrvideo.so
-vendor/lib64/libhevce_sb.ca7.android.so
 vendor/lib64/libimgsensorca.so
 vendor/lib64/libispcameraca.so
 vendor/lib64/libjpeg-alpha-oal_vendor.so
@@ -1022,6 +1021,7 @@ vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libbwc.so
+vendor/lib64/libhevce_sb.ca7.android.so
 vendor/lib64/libmp3dec_mtk.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodecdrv_header_stub.so
@@ -1283,12 +1283,6 @@ vendor/lib64/libksensor.so
 vendor/lib64/librgbwlightsensor.so
 
 # Soundtrigger
--vendor/lib/hw/sound_trigger.primary.default.so:vendor/lib/hw/sound_trigger.primary.mt6789.so
-vendor/lib/libvow_ap_test_aa.so
-vendor/lib/libvow_ap_test_dd.so
-vendor/lib/libvow_ap_test_ha.so
-vendor/lib/libvow_ap_test_hh.so
-vendor/lib/libvow_ap_test_nn.so
 -vendor/lib64/hw/sound_trigger.primary.default.so:vendor/lib64/hw/sound_trigger.primary.mt6789.so
 vendor/lib64/libvow_ap_test_aa.so
 vendor/lib64/libvow_ap_test_dd.so
