@@ -1055,7 +1055,6 @@ vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc
 vendor/lib/mt6789/libaiselector.so
 vendor/lib/libccci_util.so
 vendor/lib/libminiui.so
-vendor/lib64/libminizip.so
 vendor/lib/libmmprofile.so
 vendor/lib/libmtk_bsg.so
 vendor/lib/libmtkhardware_legacy.so
