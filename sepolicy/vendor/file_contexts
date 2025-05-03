@@ -50,6 +50,9 @@
 # Tranfs
 /dev/block/sdc62                                                                        u:object_r:tranfs_block_device:s0
 
+# Trustonic
+/(vendor|system/vendor)/bin/kmsetkey_ca.trustonic                                                  u:object_r:trustonic_kmsetkey_ca_exec:s0
+
 # USB OTG
 /sys/devices/platform/odm/odm:tran_battery/OTG_CTL                                     u:object_r:sysfs_OTG_CTL_file:s0
 
