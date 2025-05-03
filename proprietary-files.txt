@@ -596,7 +596,6 @@ vendor/lib64/libvidhance_stabilizer.so
 vendor/bin/hw/vendor.transsion.hardware.trancam.trancamserver@1.0-service
 vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml
-vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 
 # Camera Configuration files
