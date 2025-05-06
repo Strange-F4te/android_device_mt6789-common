@@ -8,6 +8,7 @@ COMMON_PATH := device/tecno/mt6789-common
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
 
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
@@ -45,6 +46,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
+
+PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
 # Allow userspace reboots
 $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
