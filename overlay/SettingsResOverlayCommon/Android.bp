@@ -6,6 +6,5 @@
 
 runtime_resource_overlay {
     name: "SettingsResOverlayCommon",
-    vendor: true
+    vendor: true,
 }
-
