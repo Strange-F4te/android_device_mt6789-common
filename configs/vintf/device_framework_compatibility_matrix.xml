@@ -67,14 +67,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.transsion.hardware.transtorage.storage</name>
-        <version>1.0</version>
-        <interface>
-            <name>IStorage</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.dolby.hardware.dms</name>
         <transport>hwbinder</transport>
         <version>2.0</version>

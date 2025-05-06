@@ -1072,7 +1072,6 @@ vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libmtkisp_metadata_v2.so
 vendor/lib64/libpixelflinger.so
 vendor/lib64/vendor.mediatek.hardware.tranHwInfo@1.0.so
-vendor/lib64/vendor.transsion.hardware.transtorage.storage@1.0.so
 vendor/lib/libimsg_log.so
 vendor/lib64/libimsg_log.so
 
