@@ -208,9 +208,6 @@ PRODUCT_PACKAGES += \
     libshim_sink \
     libshim_ui
 
-# Include GSI keys
-$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
-
 # Init files
 PRODUCT_PACKAGES += \
     fstab.mt6789 \
