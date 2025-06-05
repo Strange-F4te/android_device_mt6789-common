@@ -11,6 +11,7 @@ allow hal_fingerprint_default vendor_gf_data_file:dir create_dir_perms;
 allow hal_fingerprint_default vendor_gf_data_file:file create_file_perms;
 allow hal_fingerprint_default property_socket:sock_file write;
 allow hal_fingerprint_default fs_service:service_manager { add find };
+allow hal_fingerprint_default sw_service:service_manager { add find };
 
 vndbinder_use(hal_fingerprint_default)
 hwbinder_use(hal_fingerprint_default)

@@ -1,1 +1,2 @@
 type fs_service, vndservice_manager_type;
+type sw_service, vndservice_manager_type;
