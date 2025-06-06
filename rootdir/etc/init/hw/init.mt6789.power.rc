@@ -49,7 +49,7 @@ on init
     write /proc/sys/vm/lowmem_reserve_ratio "0 0 0"
 
     # khugepaged tuning
-    write /sys/kernel/mm/transparent_hugepage/khugepaged/scan_sleep_millisecs 60000
+    write /sys/kernel/mm/transparent_hugepage/enabled "never"
 
 on boot
     # boot perf. tune
