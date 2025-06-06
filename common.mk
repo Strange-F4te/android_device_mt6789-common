@@ -81,6 +81,9 @@ PRODUCT_PACKAGES += \
     DSPVolumeSynchronizer \
     MtkInCallService
 
+PRODUCT_PACKAGES += \
+   vendor.mediatek.hardware.bluetooth.audio@2.1.vendor \
+   vendor.mediatek.hardware.bluetooth.audio@2.2.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
