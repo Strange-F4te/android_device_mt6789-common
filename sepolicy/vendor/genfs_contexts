@@ -139,6 +139,9 @@ genfscon sysfs /devices/platform/soc/1101a000.i2c/i2c-6/6-004e/wakeup/wakeup21  
 genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt635x-auxadc/wakeup/wakeup6         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-rtc/wakeup/wakeup11           u:object_r:sysfs_wakeup:s0
 
+# Memory
+genfscon proc /sys/vm/lowmem_reserve_ratio    u:object_r:proc_watermark_boost_factor:s0
+genfscon proc /sys/vm/min_free_kbytes         u:object_r:proc_watermark_boost_factor:s0
 
 # Torch
 genfscon sysfs /devices/virtual/sub_torch/sub_torch/sub_torch_level                                 u:object_r:sysfs_sub_torch_file:s0
