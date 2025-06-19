@@ -502,9 +502,6 @@ $(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
-
-# ViPER4Android
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
     
 # vndservice
 PRODUCT_PACKAGES += \
