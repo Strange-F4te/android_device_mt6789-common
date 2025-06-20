@@ -12,19 +12,6 @@ cc_library {
 }
 
 cc_library_shared {
-    name: "libshim_sink",
-    srcs: ["libshim_sink.cpp"],
-    compile_multilib: "64",
-    shared_libs: [
-        "libaudioclient",
-    ],
-    header_libs: [
-        "libaudioclient_headers",
-        "libmedia_headers",
-    ],
-}
-
-cc_library_shared {
     name: "libutils-shim",
     shared_libs: ["libutils-v32.transsion"],
     compile_multilib: "64",

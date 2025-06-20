@@ -26,13 +26,8 @@ namespace_imports = [
     'hardware/transsion',
 ]
 
-def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
-    return f'{lib}_{partition}' if partition == 'vendor' else None
-
-
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
-    ('vendor.mediatek.hardware.videotelephony@1.0',): lib_fixup_vendor_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
@@ -67,10 +62,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so')
         .replace_needed('android.hardware.security.sharedsecret-V1-ndk_platform.so', 'android.hardware.security.sharedsecret-V1-ndk.so')
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
-    ('system_ext/bin/vtservice', 'system_ext/lib64/libsource.so'): blob_fixup()
-        .add_needed('libshim_ui.so'),
-    ('system_ext/bin/vtservice', 'system_ext/lib64/libsink.so'): blob_fixup()
-        .add_needed('libshim_sink.so'),
     'vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc': blob_fixup()
         .regex_replace('start', 'enable'),
     ('vendor/lib/libspeech_enh_lib.so', 'vendor/lib/libalsautils-v32.so', 'vendor/lib64/libspeech_enh_lib.so', 'vendor/lib64/libalsautils-v32.so', 'vendor/lib64/libwifi-hal-mtk.so',
