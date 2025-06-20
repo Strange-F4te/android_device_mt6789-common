@@ -12,6 +12,19 @@ cc_library {
 }
 
 cc_library_shared {
+    name: "libshim_sensors",
+    whole_static_libs: [
+        "android.hardware.sensors@1.0-convert",
+    ],
+    shared_libs: [
+        "libhardware",
+        "libhidlbase",
+        "android.hardware.sensors@1.0",
+    ],
+    vendor: true,
+}
+
+cc_library_shared {
     name: "libutils-shim",
     shared_libs: ["libutils-v32.transsion"],
     compile_multilib: "64",
