@@ -86,6 +86,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcutils.so'),
     ('vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so'): blob_fixup()
         .add_needed('libutils-shim.so'),
+    'vendor/bin/hw/mtkfusionrild': blob_fixup()
+        .add_needed('libutils-v32.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
