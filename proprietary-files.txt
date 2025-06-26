@@ -1057,7 +1057,7 @@ vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so
 
 # NFC
 vendor/etc/init/init.nxp.nfc.rc
-vendor/lib64/libpn557_fw.so
+vendor/lib64/libpn557_fw.so|cb8575ba128089742f73ec0963b09cde18b1afe5
 
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
