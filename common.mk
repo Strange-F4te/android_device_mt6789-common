@@ -251,7 +251,6 @@ PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor:64 \
-    android.hardware.media.omx@1.0-service \
     libcodec2_hidl@1.2.vendor:64 \
     libcodec2_hidl_plugin:64 \
     libcodec2_vndk.vendor:64 \
