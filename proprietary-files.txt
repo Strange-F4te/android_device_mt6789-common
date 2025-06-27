@@ -1036,11 +1036,8 @@ vendor/lib64/libmvpuop_mtk_nn.so
 vendor/lib64/libvpu5.so
 
 # Misc
-vendor/bin/mt6660_calibration
-vendor/bin/rt5512_calibration
 vendor/etc/init/init.otg.rc
 vendor/lib64/libminiui.so
-vendor/lib64/libmtk_bsg.so
 
 # MMAGENT
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
@@ -1109,19 +1106,11 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
 # Radio
 vendor/bin/hw/mtkfusionrild
-vendor/bin/AgentTest
 vendor/bin/ccci_fsd
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
-vendor/bin/doeapp-sat
-vendor/bin/dtc_vendor
-vendor/bin/epdg_wod
-vendor/bin/factory
 vendor/bin/gsm0710muxd
-vendor/bin/mrdump_tool
 vendor/bin/muxreport
-vendor/bin/starter
-vendor/bin/stp_dump3
 vendor/bin/xcap
 vendor/etc/apdb/APDB_MT6789___W2227
 vendor/etc/apdb/APDB_MT6789___W2227_ENUM
@@ -1131,7 +1120,6 @@ vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/init.connfem.rc
 vendor/etc/init/mtkrild.rc
-vendor/etc/init/muxreport.rc
 vendor/etc/ecc_list.xml
 vendor/etc/ecc_list_OP01.xml
 vendor/etc/ecc_list_OP02.xml
@@ -1186,7 +1174,6 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # Radio (IMS)
 vendor/bin/hw/vtservice_hidl
-vendor/bin/mtk_pkm_service
 vendor/bin/rcs_volte_stack
 vendor/bin/volte_clientapi_ua
 vendor/bin/volte_imcb
@@ -1202,11 +1189,9 @@ vendor/etc/init/init.volte_stack.rc
 vendor/etc/init/init.volte_ua.rc
 vendor/etc/init/init.vtservice_hidl.rc
 vendor/etc/init/init.wod.rc
-vendor/etc/init/mtk_pkm_service.rc
 vendor/etc/init/volte_clientapi_ua.rc
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib/libipsec_ims_shr.so
-vendor/lib/libpkm.so
 vendor/lib/librcs_interface.so
 vendor/lib/librcs_volte_core.so
 vendor/lib/libverno.so
@@ -1217,7 +1202,6 @@ vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
 vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/libipsec_ims_shr.so
-vendor/lib64/libpkm.so
 vendor/lib64/libverno.so
 vendor/lib64/libwo.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
