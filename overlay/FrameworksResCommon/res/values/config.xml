@@ -230,4 +230,8 @@
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
 
+    <!-- Control whether the pickup gesture is enabled by default. This value will be used
+     during initialization when the setting is still null. -->
+    <bool name="config_dozePickupGestureEnabled">false</bool>
+
 </resources>
