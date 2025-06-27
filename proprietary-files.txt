@@ -530,8 +530,6 @@ vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 # Camera (Hard Dependencies)
 vendor/bin/mt6789/dumpfaultd.mt6789
 vendor/bin/mt6789/jpegtool
-vendor/lib/libdynamiclog.so
-vendor/lib/libtflite_mtk.so
 vendor/lib64/mt6789/libImageEval.so
 vendor/lib64/mt6789/libTranASD.so
 vendor/lib64/mt6789/libTranArcFilter.so
