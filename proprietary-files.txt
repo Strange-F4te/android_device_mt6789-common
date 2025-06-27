@@ -582,7 +582,7 @@ vendor/lib64/mt6789/librmsclib1.so
 vendor/lib64/mt6789/libremosaic_wrapper.so
 vendor/lib64/mt6789/libremosaiclib.so
 vendor/lib64/mt6789/libsdk_sr.so
-vendor/lib64/mt6789/libsegmention.so
+vendor/lib64/mt6789/libsegmention.so;DISABLE_CHECKELF
 vendor/lib64/mt6789/libsegmentionPre.so
 vendor/lib64/mt6789/libsmartdetector.so
 vendor/lib64/mt6789/libst_mobile.so
@@ -804,6 +804,7 @@ vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/bin/kmsetkey_ca.trustonic
 vendor/etc/init/trustonic.mc_kmsetkey_ca.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
+vendor/lib/libthha.so;DISABLE_CHECKELF
 vendor/lib64/hw/kmsetkey.trustonic.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/libdecrypt.so
@@ -823,7 +824,6 @@ vendor/lib/libladder.so
 vendor/lib64/libladder.so
 
 # Media
-vendor/bin/vpud
 vendor/bin/mt6789/v3avpud.mt6789
 vendor/etc/init/v3avpud.rc
 vendor/lib/mt6789/libvcodec_utility.so
@@ -832,10 +832,8 @@ vendor/lib/mt6789/libvcodecdrv.so
 vendor/lib/mt6789/libvcodecdrv_v3a.so
 vendor/lib/mt6789/libvpudv3a_vcodec.so
 vendor/lib/libvcodecdrv_header_stub.so
-vendor/lib/libvcodec_oal.so
+vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF
 vendor/lib/libvcodec_utility_plat.mt6789.so
-vendor/lib/libvpu5.so
-vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
 
 # Media (C2)
@@ -860,29 +858,29 @@ vendor/lib/AVCSecureVdecCA.so
 vendor/lib/HEVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libAVCSecureVencCA.so
-vendor/lib/libHEVCdec_sa.ca7.android.so
+vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libh264dec_customize.so
-vendor/lib/libh264dec_sa.ca7.so
-vendor/lib/libh264dec_sd.ca7.so
-vendor/lib/libh264dec_se.ca7.so
-vendor/lib/libh264enc_sa.ca7.so
-vendor/lib/libhevce_sb.ca7.android.so
+vendor/lib/libh264dec_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libh264dec_sd.ca7.so;DISABLE_CHECKELF
+vendor/lib/libh264dec_se.ca7.so;DISABLE_CHECKELF
+vendor/lib/libh264enc_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libhevce_sb.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
-vendor/lib64/libJpgEncPipe.so
-vendor/lib64/libjpeg-alpha-oal_vendor.so
-vendor/lib64/libjpeg-alpha_vendor.so
-vendor/lib/libmp3dec_mtk.so
-vendor/lib/libmp4enc_sa.ca7.so
-vendor/lib/libmp4enc_xa.ca7.so
-vendor/lib/libvp8dec_sa.ca7.so
-vendor/lib/libvp8enc_sa.ca7.so
-vendor/lib/libvp9dec_sa.ca7.so
+vendor/lib/libmp3dec_mtk.so;DISABLE_CHECKELF
+vendor/lib/libmp4enc_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libmp4enc_xa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libvp8dec_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libvp8enc_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libvp9dec_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/HEVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libAVCSecureVencCA.so
+vendor/lib64/libJpgEncPipe.so
+vendor/lib64/libjpeg-alpha-oal_vendor.so
+vendor/lib64/libjpeg-alpha_vendor.so
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libhevce_sb.ca7.android.so
 vendor/lib64/libheichal.so
@@ -1105,6 +1103,8 @@ vendor/bin/mcDriverDaemon
 vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
 vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
+vendor/lib/libgz_gp_client.so
+vendor/lib/libgz_uree.so
 vendor/lib64/libTEECommon.so
 vendor/lib64/libgz_gp_client.so
 vendor/lib64/libgz_uree.so
