@@ -34,7 +34,7 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
     ('vendor/bin/hw/mt6789/camerahalserver', 'vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so',
-     'vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so','vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service'): blob_fixup()
+     'vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so','vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/lib64/mt6789/libmtkcam_stdutils.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service'): blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so')
         .replace_needed('libbinder.so', 'libbinder-v32.so')
         .replace_needed('libutils.so', 'libutils-v32.transsion.so'),
