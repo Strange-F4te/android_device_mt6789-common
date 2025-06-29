@@ -690,7 +690,6 @@ vendor/priv-app/GpuGameDriver.mt6789/GpuGameDriver.mt6789.apk
 # Display (AAL)
 vendor/lib64/mt6789/libaal_cust_func.so
 vendor/lib64/mt6789/libaalservice.so
-vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
 
