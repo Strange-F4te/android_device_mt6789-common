@@ -441,9 +441,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor
 
 PRODUCT_PACKAGES += \
-    libshim_sensors
-
-PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
 
 PRODUCT_COPY_FILES += \
