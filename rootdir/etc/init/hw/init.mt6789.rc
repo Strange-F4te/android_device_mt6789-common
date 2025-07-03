@@ -11,12 +11,7 @@ import /vendor/etc/init/hw/init.mt6789.power.rc
 import /vendor/etc/init/hw/init.modem.rc
 # *** DO NOT import the new rc file after this line ***
 
-on early-init
-    write /proc/bootprof "INIT:early-init"
-
 on init
-    write /proc/bootprof "INIT:init"
-
     # if primary storage is physical, set ro.vold.primary_physical to 1
     # setprop ro.vold.primary_physical 1
 
@@ -39,7 +34,6 @@ mkdir /tranfs 0771 system system
     write /dev/blkio/background/blkio.group_idle 0
 
 on late-init
-    write /proc/bootprof "INIT:late-init"
 # enable rcu_expedited
     write /sys/kernel/rcu_expedited 1
 
@@ -72,41 +66,21 @@ on property:init.svc.vendor.charger=running
     start fuelgauged
     start fuelgauged_nvram
 
-    # Stop bootprof
-    write /proc/bootprof "0"
-
 # initialize powerHAL when boot is completed
 on property:sys.boot_completed=1
     setprop vendor.mediatek.powerhal.init 1
 
-on early-fs
-    write /proc/bootprof "INIT:early-fs"
-
 on fs
-    write /proc/bootprof "INIT:fs"
-
     # mount fstab
-    write /proc/bootprof "INIT:Mount_START"
-    write /sys/kernel/tracing/trace_marker "B|1|Mount"
     mount_all --early
     exec /system/bin/tune2fs -O has_journal -u 10010 -r 4096 /dev/block/by-name/userdata
-    write /sys/kernel/tracing/trace_marker "E"
-    write /proc/bootprof "INIT:Mount_END"
 
 on late-fs
-    write /proc/bootprof "INIT:late-fs"
     wait_for_prop hwservicemanager.ready "true"
 
-    write /proc/bootprof "INIT:Mount_START --late"
-    write /sys/kernel/tracing/trace_marker "B|1|Mount late"
     mount_all --late
-    write /sys/kernel/tracing/trace_marker "E"
-    write /proc/bootprof "INIT:Mount_END --late"
-
 
 on post-fs
-    write /proc/bootprof "INIT:post-fs"
-
     #change permissions for mediaserver
     chown root media /proc/clkmgr/mipi_test
 
@@ -123,8 +97,6 @@ on post-fs
     chown radio system /proc/freqhopping/userdef
 
 # change owner
-    chown system system /proc/bootprof
-    chmod 0664 /proc/bootprof
     chown root system /proc/mtprof/cputime
     chown root system /proc/mtprof/reboot_pid
 
@@ -153,9 +125,7 @@ on post-fs
     #STD:add XLLWCHLYEL-738 kfp by hao.lv5 20220907 end
 
 on post-fs-data
-    write /proc/bootprof "INIT:post-fs-data"
     wait_for_prop vendor.all.modules.ready 1
-    write /proc/bootprof "modprobe: Load_Module_DONE"
 
     chown system system /mnt/vendor/nvcfg
     chmod 0771 /mnt/vendor/nvcfg
@@ -704,18 +674,10 @@ on post-fs-data
 	
 # End of adding by MTK drivers
 # -----------------------
-on zygote-start
-    write /proc/bootprof "INIT:zygote-start"
-
-on early-boot
-    write /proc/bootprof "INIT:early-boot"
-
 on boot
     # start EAS+
     write /sys/devices/system/cpu/eas/enable 1
     
-    write /proc/bootprof "INIT:boot"
-
     write /proc/sys/vm/dirty_writeback_centisecs 300
     chmod 0660 /sys/power/autosleep
 
@@ -922,9 +884,6 @@ on property:sys.boot_completed=1
 on property:sys.boot_completed=1
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1 -1 -1"
     write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
-
-    # stop bootprof
-    write /proc/bootprof 0
 
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1
