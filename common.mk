@@ -388,7 +388,7 @@ PRODUCT_PACKAGES += \
 
 # Required libs as of 14 QPR3
 PRODUCT_PACKAGES += \
-    libshim_camera_metadata \
+    libcamera_metadata_shim \
     libexpat.vendor \
     libunwindstack.vendor \
     libchrome.vendor:64 \
