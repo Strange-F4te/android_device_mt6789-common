@@ -33,10 +33,6 @@ mkdir /tranfs 0771 system system
     write /dev/blkio/blkio.group_idle 2000
     write /dev/blkio/background/blkio.group_idle 0
 
-on late-init
-# enable rcu_expedited
-    write /sys/kernel/rcu_expedited 1
-
 # mount different fs start
 
 on property:init.svc.vendor.charger=running
