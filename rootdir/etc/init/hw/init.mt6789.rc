@@ -936,10 +936,6 @@ on property:sys.boot_completed=1
 on property:persist.vendor.mediatek.fast_charging.support=*
     write /sys/devices/platform/charger/fast_chg_indicator ${persist.vendor.mediatek.fast_charging.support}
 
-# FPSGO FBT Game
-on boot
-    insmod /vendor/lib/modules/fpsgo.ko
-
 #SPD: add for watermark_scale_factor at 20230302 start
 on property:sys.boot_completed=1
     write /proc/sys/vm/watermark_scale_factor 200
